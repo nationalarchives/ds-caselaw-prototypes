@@ -1,0 +1,281 @@
+/* MOBILE */
+
+
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: #eaeaea;
+}
+
+a {
+  color: #000;
+}
+
+/* header */
+
+.header {
+  background-color: #fff;
+  border-bottom: solid 1px #808080;
+  position: fixed;
+  width: 100%;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.header li a {
+  display: block;
+  margin-left: 3px;
+}
+
+.header li a:hover {
+  text-decoration: none;
+}
+
+
+
+.header li {
+  padding-right: 30px;
+}
+
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .nav-icon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .nav-icon:before,
+.header .menu-icon .nav-icon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .nav-icon:before {
+  top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+  top: -5px;
+}
+
+
+
+/* my divs  */
+
+.actions {
+  float: left;
+  display: inline;
+  position: absolute;
+  top: 20px;
+}
+
+.actions li {
+  display: inline;
+}
+
+li.search {
+    padding-left: 30px;
+    border-bottom: none;
+  }
+
+
+
+/* Here's the marker!! */
+li.search a:before {
+    content: "";
+    display: block;
+    background: url("search-icon.svg") no-repeat;
+    width: 19px;
+    height: 19px;
+    float: left;
+    margin: 0 7px 0 0px;
+}
+
+li.logout a:before  {
+  content: "";
+  background: url("logout-icon.svg") no-repeat;
+  width: 19px;
+  height: 19px;
+  float: left;
+  margin: 0 7px 0 0px;
+}
+  
+
+
+
+
+
+
+.actions li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #1d70b8;
+    border-bottom: none;
+  padding-bottom: 2px;
+  margin-right: 20px;
+}
+
+
+.actions a:hover {
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: none;
+    color: #003078;
+    text-decoration: none;
+  }
+
+
+.main-nav li {
+    padding: 0px 0px;
+}
+
+
+  .header li {
+    display: inline;
+    position:relative;
+    padding-right: 30px;
+  }
+
+.menu ul li  {
+    background-color: red;
+}
+
+.menu li a {
+    padding: 20px 30px;
+    border-top: solid 1px #bbb;
+    margin-left: 0px;
+    margin-bottom: -20px;
+    color: #1d70b8;
+    
+}
+
+
+.menu a:hover {
+    background-color: #efefef;
+    color: #003078;
+}
+
+
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top:0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top:0;
+}
+
+
+/* DESKTOP 48em = 768px @ 16pt font */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+    margin: 20px;
+  }
+  .header li a {
+    padding: 0px;
+    color: #1d70b8;
+    display: block;
+  }
+  .header .menu {
+    clear: none;
+    float: left;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  
+  /* my divs  */
+
+  .actions {
+    float: right;
+    position: relative;
+    top: 0px;
+  }
+  
+  .main-nav {
+    padding: 0px;
+  }
+
+  .header li a {
+    background-color: #ffffff;
+    margin: 0 20px
+  }
+
+
+  .actions li a {
+    border-bottom: none;
+  }
+
+  .menu li a {
+    border-top: none;
+    padding: 0;
+    border-bottom: solid 2px #1d70b8;
+    padding-bottom: 4px;
+    text-decoration: none;
+  }
+
+  .menu li a:hover {
+    border-bottom: none;
+    color: #003078;
+  }
+  
+  .header li a {
+    margin: 0;
+  }
+
+  .menu a:hover {
+    background-color: #ffffff;
+  }
+
+
+  }
