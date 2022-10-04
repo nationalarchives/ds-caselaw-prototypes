@@ -10,13 +10,13 @@
     <link rel="icon" href="https://editor.caselaw.nationalarchives.gov.uk/static/images/favicons/favicon.png">
 
     
-      <link href="./Find and manage case law_files/css2" rel="stylesheet">
-      <link href="./Find and manage case law_files/main.css" rel="stylesheet">
-      <link href="./Find and manage case law_files/nav.css" rel="stylesheet">
+      <link href="../v1-0/assets/css2" rel="stylesheet">
+      <link href="../v1-0/assets/main.css" rel="stylesheet">
+      <link href="../v1-0/assets/nav.css" rel="stylesheet">
     
 
     
-      <script defer="" src="./Find and manage case law_files/app.js"></script>
+      <script defer="" src="../v1-0/assets/app.js"></script>
     
   </head>
 
@@ -45,7 +45,6 @@
     <img class="page-header__logo" src="./Find and manage case law_files/tna_logo.svg" alt="The National Archives home" width="320" height="44">
   </a>
 </div>
-
 
     </header>
 
@@ -76,23 +75,23 @@
 
 <!-- START Navigation bar -->
 
-        <header class="header">
-          <div class="main-nav">  
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
-            <ul class="menu">
-                <li><a href="https://www.bbc.co.uk">Incoming judgments</a></li>
-                <li><a href="https://www.bbc.co.uk">Recently published judgments</a></li>
-              <li><a href="https://www.bbc.co.uk">Deleted judgments</a></li>
-            </ul>
-          </div>
-          <div class="actions">
-            <ul>
-              <li class="search"><a href="https://www.bbc.co.uk">Search</a></li>
-              <li class="logout"><a href="https://www.bbc.co.uk">Log out</a></li>
-            </ul>
-          </div>
-        </header>
+<div class="main-nav">  
+  <div>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+    <ul class="menu">
+      <li><a href="https://www.bbc.co.uk">Incoming judgments</a></li>
+      <li><a href="https://www.bbc.co.uk">Recently published judgments</a></li>
+      <li><a href="https://www.bbc.co.uk">Deleted judgments</a></li>
+    </ul>
+  </div>
+  <div class="actions">
+    <ul>
+      <li class="search"><a href="https://www.bbc.co.uk">Search</a></li>
+      <li class="logout"><a href="https://www.bbc.co.uk">Log out</a></li>
+    </ul>
+  </div>
+</div>
 
 <!-- END Navigation bar -->
 
