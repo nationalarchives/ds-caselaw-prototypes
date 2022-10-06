@@ -6,6 +6,9 @@
 </head>
 <body>
     <h1>Caselaw Public UI prototypes</h1>
-    <p>There are currently no prototypes here yet.</p>
+    <p>This is a list of design discovery features for the public user interface.</p>
+    <ul>
+        <li><a href="judgment-name-with-ncn/judgment-name-with-ncn.php">Combining judgment name with neutral citation number</a></li>
+</ul>
 </body>
 </html>

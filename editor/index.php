@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Caselaw Editor UI prototypes</h1>
-    <p>This list is a catalogue of design features for the EUI.</p>
+    <p>This is a list of design discovery features for the editor user interface.</p>
     <ul>
         <li><a href="main-nav-idea/main-nav.php">Main navigation</a></li>
 </ul>
