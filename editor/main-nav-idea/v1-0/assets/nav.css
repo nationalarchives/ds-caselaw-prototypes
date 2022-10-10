@@ -33,6 +33,7 @@
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
+    margin-left: 20px;
   }
   
   /* menu icon */
@@ -45,16 +46,6 @@
     user-select: none;
   }
   
-  /* this is the old hamburger menu
-  .main-nav .menu-icon .nav-icon {
-    background: #333;
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: background .2s ease-out;
-    width: 18px;
-  } */
-  
   /*this is the down arrow border+width is for the css of it*/
   .main-nav .menu-icon .nav-icon {
     /* border: solid black;
@@ -64,17 +55,6 @@
     padding: 10px;
     position: relative;
   }
-  
-/*   not sure if this is required?
-  .main-nav .menu-icon .nav-icon:before,
-  .main-nav .menu-icon .nav-icon:after {
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-  } */
   
   .main-nav .menu-icon .nav-icon:before {
     background-image: url("up-chevron.svg"); 
@@ -139,7 +119,7 @@
     width: 19px;
     height: 19px;
     float: left;
-    margin: 0 7px 0 0px;
+    margin-right: 7px;
   }
   
   li.logout a:before {
@@ -157,16 +137,13 @@
     text-decoration: none;
     color: #1d70b8;
     border-bottom: none;
-    padding-bottom: 2px;
     margin-right: 20px;
   }
   
   .actions a:hover {
     text-decoration: none;
-    padding-bottom: 2px;
     border-bottom: none;
     color: #003078;
-    text-decoration: none;
   }
   
   .main-nav li {
@@ -177,10 +154,6 @@
     display: inline;
     position: relative;
     padding-right: 3px;
-  }
-  
-  .menu ul li {
-    background-color: red;
   }
   
   .menu li a {
@@ -199,7 +172,7 @@
   
   /* DESKTOP 48em = 768px @ 16pt font */
   
-  @media (min-width: 970px) {
+  @media (min-width: 1148px) {
     .main-nav li {
       float: left;
       margin: 20px;
@@ -224,13 +197,17 @@
     .menu li a {
       border-top: none;
       padding: 0;
-      border-bottom: solid 2px #1d70b8;
       padding-bottom: 2px;
       text-decoration: none;
     }
   
     .menu li a:hover {
-      border-bottom: none;
+      border-bottom: solid 2px;
+      color: #003078;
+    }
+
+    .menu li a:active {
+      border-bottom: solid 2px;
       color: #003078;
     }
   
@@ -247,5 +224,13 @@
   
     .actions li a {
       border-bottom: none;
+    }
+
+    .actions li a:hover {
+      border-bottom: solid 2px #003078;
+    }
+
+    li.search {
+      margin-right: 0px;
     }
   }
