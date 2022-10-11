@@ -155,6 +155,10 @@
     position: relative;
     padding-right: 3px;
   }
+
+  .menu ul {
+    margin-left: 0;
+  }
   
   .menu li a {
     padding: 20px 30px;
@@ -196,8 +200,8 @@
   
     .menu li a {
       border-top: none;
-      padding: 0;
-      padding-bottom: 2px;
+      /* padding: 0;
+      padding-bottom: 2px; */
       text-decoration: none;
     }
   
@@ -222,9 +226,9 @@
       margin-left: 1rem;
     }
   
-    .actions li a {
+    /* .actions li a {
       border-bottom: none;
-    }
+    } */
 
     .actions li a:hover {
       border-bottom: solid 2px #003078;
