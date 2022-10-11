@@ -225,14 +225,10 @@
       top: 0px;
       margin-left: 1rem;
     }
-  
-    /* .actions li a {
-      border-bottom: none;
-    } */
-
-    .actions li a:hover {
+    
+    /* .actions li a:hover {
       border-bottom: solid 2px #003078;
-    }
+    } */
 
     li.search {
       margin-right: 0px;
