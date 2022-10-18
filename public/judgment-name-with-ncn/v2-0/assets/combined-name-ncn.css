@@ -1,8 +1,9 @@
 .judgment-details {
     padding: 0rem 0.5rem;
     background-color: #fff;
-    width: 55%;
+    width: 64%;
     text-align: left;
+    font-size: 1.8rem;
 }
 
 p.judgment-name {
@@ -20,3 +21,14 @@ span.separator {
         margin: 0 auto;
     }
 }
+
+
+@media (max-width: 768px) {
+    .judgment-details {
+      min-width: 90%;
+      text-align: center; 
+      margin: 0;
+      width: 100%;
+  
+    }
+  }
