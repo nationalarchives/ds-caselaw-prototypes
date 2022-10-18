@@ -94,7 +94,7 @@
     <p id="judgment-name" aria-label="Judgment name" class="judgment-name">Amir Soleymani v Nifty Gateway LLC <span aria-label="neutral citation number" class="separator">[2022] EWCA Civ 1297</span></p>
     </div>
     <div class="judgment-title__copy-title">
-      <a onClick="copyEvent('judgment-name')" class="copy-title" href="#">Copy to clipboard</a>
+      <a onClick="copyEvent('judgment-name')" class="copy-title" href="#">Copy title to clipboard</a>
       
 
     </div>
