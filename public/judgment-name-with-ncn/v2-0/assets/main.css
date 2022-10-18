@@ -2452,7 +2452,7 @@ a:visited {
 
 @media (min-width: 576px) {
   .judgment-toolbar-download {
-    margin-left: auto;
+    margin-top: 1rem;
   }
 }
 
