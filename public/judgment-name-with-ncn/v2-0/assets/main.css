@@ -2370,8 +2370,8 @@ a:visited {
   .judgment-toolbar__container>div {
     text-align: center;
     display: block;
-    padding: 0.25rem 1rem;
-         /* extra declaration  */
+         /* changes  */
+         padding: 0.25rem 0rem;
          min-width: 90%; 
   }
 }
@@ -2447,7 +2447,7 @@ a:visited {
 }
 
 .judgment-toolbar-download {
-  margin: 0 auto;
+  margin: 0  1rem;
 }
 
 @media (min-width: 576px) {
@@ -2455,6 +2455,13 @@ a:visited {
     margin-top: 1rem;
   }
 }
+
+@media (max-width: 768px) {
+  .judgment-toolbar-download {
+    margin: 0 auto;
+}
+}
+
 
 .judgment-toolbar-download__option--pdf {
   margin: 0 !important;
@@ -2464,8 +2471,15 @@ a:visited {
 .judgment-toolbar-download__download-options {
   color: #555;
   font-size: 0.75rem;
-  margin: 0.25rem 0 0 0;
+  margin: 1rem 0 0 0;
 }
+/* extra declaration  */
+@media (max-width: 768px) {
+.judgment-toolbar-download__download-options {
+  text-align: center;
+}
+}
+
 
 .judgment-toolbar-download__download-options a {
   background-color: transparent;
