@@ -16,7 +16,7 @@ text-align: center;
   }
 
   .judgment-title__copy-title {
-    margin-top: 1rem;
+    margin-top: 0.8rem;
     min-width: 24%;
   }
 
@@ -30,6 +30,8 @@ text-align: center;
     height: 20px;
     width: 20px;
     margin: 0 0.3rem 0 0;
+    position: relative;
+top: 0.3rem;
   }
 
   .judgment-name span::before {
