@@ -14,6 +14,8 @@
       <link href="../v1-0/assets/css2" rel="stylesheet">
       <link href="../v1-0/assets/main.css" rel="stylesheet">
       <link href="../v1-0/assets/combined-name-ncn.css" rel="stylesheet">
+      <link href="../v1-0/assets/start-document-marker.css" rel="stylesheet">
+     
     
 
     
@@ -78,26 +80,51 @@
 
 </header>
 
-<div class="judgment-toolbar">
-    <div class="judgment-toolbar__container">
-        
 
-        <div class="judgment-toolbar__download judgment-toolbar-download">
-            <a class="judgment-toolbar-download__option--pdf" role="button" draggable="false" href="https://caselaw.nationalarchives.gov.uk/ewca/civ/2022/1297/data.pdf">Download as PDF (813.1&nbsp;KB)</a>
-            <p class="judgment-toolbar-download__download-options" role="note"><a href="https://caselaw.nationalarchives.gov.uk/ewca/civ/2022/1297#download-options">More download options</a></p>
-        </div>
-    </div>
-</div>
 
 <!-- START Combined name and NCN -->
 
 <div class="copy-text">
-  <h3>If required; you can copy this judgment name and neutral citation number</h3>
-<p id="copy" class="judgment-name">CONSULTANT CONNECT LIMITED v NHS BATH AND NORTH EAST SOMERSET, SWINDON AND WILTSHIRE INTEGRATED CARE BOARD & Ors <span class="separator">[2022] EWCA Civ 1297</span></p>
-<button type="button" onclick="copyEvent('copy')">Copy to clipboard</button>
+  
+
+
+
+<div class="judgment-title__container">
+    <div class="judgment-details">
+    <p aria-label="Judgment name" class="judgment-name">Amir Soleymani v Nifty Gateway LLC <span aria-label="neutral citation number" class="separator">[2022] EWCA Civ 1297</span></p>
+    </div>
+    <div class="judgment-title__copy-title">
+      <a class="copy-title" href="#">Copy to clipboard</a>
+      
+
+    </div>
+  </div>
+
+  <div class="judgment-document">
+    <div class="judgment-document__container">
+        
+
+        <div class="judgment-document__download judgment-toolbar-download">
+            <a class="judgment-document-download__option--pdf" role="button" draggable="false" href="https://caselaw.nationalarchives.gov.uk/ewca/civ/2022/1297/data.pdf">Download as PDF (813.1&nbsp;KB)</a>
+            <p class="judgment-document-download__download-options" role="note"><a href="https://caselaw.nationalarchives.gov.uk/ewca/civ/2022/1297#download-options">More download options</a></p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="start-document-marker" id="start-of-document">
+    <div class="start-document-marker__top-link">
+        <span>Start of document</span>
+    </div>
 </div>
 
 <!-- END Combined name and NCN -->
+
+
+
+
+
 
 
 <main id="main-content">

@@ -1,0 +1,24 @@
+.judgment-details {
+    padding: 0rem 0.5rem;
+    background-color: #fff;
+    width: 55%;
+    text-align: left;
+}
+
+p.judgment-name {
+    font-size: 0.84rem;
+    margin-top: 7px;
+    margin: 5px 3px;
+}
+
+span.separator {
+    font-weight: bold;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+@media (max-width: 576px) {
+    .judgment-details {
+        margin: 0 auto;
+    }
+}
