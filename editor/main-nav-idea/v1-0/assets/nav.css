@@ -107,10 +107,11 @@
   padding-left: 0;
 }
 
+
+
 li.search {
   padding-left: 30px;
   border-bottom: none;
-  line-height: 26px;
 }
 
 li.search a:before {
@@ -224,7 +225,6 @@ li.logout a:before {
     margin-left: 0px;
     margin-bottom: -20px;
     text-decoration: none;
-    line-height: 26px;
   }
 
   .menu li:hover {
@@ -235,7 +235,7 @@ li.logout a:before {
     border-bottom: solid 2px;
     background-color: transparent;
     color: #003078;
-    line-height: 26px;
+
   }
 
   .menu li a:active {
