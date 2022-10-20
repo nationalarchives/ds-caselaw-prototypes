@@ -14,7 +14,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    overflow: hidden;
+   overflow: hidden;
   }
   
   .main-nav li a {
@@ -33,7 +33,6 @@
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
-    margin-left: 20px;
   }
   
   /* menu icon */
@@ -41,15 +40,15 @@
   .main-nav .menu-icon {
     cursor: pointer;
     float: right;
-    padding: 20px 20px;
+    padding: 20px 40px;
     position: relative;
     user-select: none;
   }
   
   /*this is the down arrow border+width is for the css of it*/
   .main-nav .menu-icon .nav-icon {
-    /* border: solid black;
-    border-width: 0 3px 3px 0; */
+    top: 4px;
+    margin-right: 6px;
     background-image: url("down-chevron.svg"); 
     display: inline-block;
     padding: 10px;
@@ -120,6 +119,7 @@
     height: 19px;
     float: left;
     margin-right: 7px;
+    margin-top: 2px;
   }
   
   li.logout a:before {
@@ -130,6 +130,7 @@
     height: 19px;
     float: left;
     margin: 0 7px 0 0px;
+    margin-top: 2px;
   }
   
   .actions li a {
@@ -161,11 +162,12 @@
   }
   
   .menu li a {
-    padding: 20px 30px;
+    padding: 20px 40px;
     border-top: solid 1px #bbb;
     margin-left: 0px;
     margin-bottom: -20px;
     color: #1d70b8;
+    
   
   }
   
@@ -192,10 +194,18 @@
       clear: none;
       float: left;
       max-height: none;
+      margin-left: 20px;
     }
   
     .main-nav .menu-icon {
       display: none;
+    }
+
+    .main-nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+     overflow: visible;
     }
   
     .menu li a {
