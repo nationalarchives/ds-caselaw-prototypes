@@ -1,11 +1,11 @@
-/* MOBILE */
-
 .main-nav {
   background-color: #fff;
   border-bottom: solid 1px #808080;
   position: relative;
   width: 100%;
   margin-bottom: 3rem;
+  display: block;
+  float: left;
 }
 
 .main-nav ul {
@@ -16,16 +16,16 @@
 }
 
 .main-nav li a {
-  display: block;
-  margin-left: 3px;
   color: #000;
+  margin: 5px;
 }
 
 .main-nav li a:hover {
   text-decoration: none;
+  border-bottom: 2px solid;
+  padding-bottom: 2px;
+  color: #003078;
 }
-
-/* menu */
 
 .main-nav .menu {
   clear: both;
@@ -33,57 +33,81 @@
   transition: max-height .2s ease-out;
 }
 
-/* menu icon */
-
 .main-nav .menu-icon {
   cursor: pointer;
   float: right;
-  padding: 28px 20px;
+  padding: 20px 40px;
   position: relative;
   user-select: none;
+  color: #1d70b8;
+}
+
+.main-nav .menu-icon:hover {
+  cursor: pointer;
+  float: right;
+  padding: 20px 40px;
+  position: relative;
+  user-select: none;
+  color: #003078;
 }
 
 .main-nav .menu-icon .nav-icon {
-  background: #333;
-  display: block;
-  height: 2px;
+  top: 4px;
+  margin-right: 6px;
+  background-image: url("down-chevron.svg");
+  display: inline-block;
+  padding: 10px;
   position: relative;
-  transition: background .2s ease-out;
-  width: 18px;
-}
-
-.main-nav .menu-icon .nav-icon:before,
-.main-nav .menu-icon .nav-icon:after {
-  background: #333;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
 }
 
 .main-nav .menu-icon .nav-icon:before {
-  top: 5px;
+  background-image: url("up-chevron.svg");
+  display: inline-block;
+  padding: 10px;
+  position: absolute;
 }
 
 .main-nav .menu-icon .nav-icon:after {
   top: -5px;
 }
 
-/* my divs  */
+.main-nav .menu-btn {
+  display: none;
+}
+
+.main-nav .menu-btn:checked~.menu {
+  max-height: 240px;
+}
+
+.main-nav .menu-btn:checked~.menu-icon .nav-icon {
+  background-image: url("up-chevron.svg");
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+}
+
+.main-nav .menu-btn:checked~.menu-icon .nav-icon:before {
+  top: 0;
+}
+
+.main-nav .menu-btn:checked~.menu-icon .nav-icon:after {
+  top: 0;
+}
 
 .actions {
   float: left;
   display: inline;
   position: absolute;
-  top: 20px;
-  margin-left: 2rem;
+  top: 15px;
+  margin-left: 0;
 }
 
 .actions li {
   display: inline;
+  padding-left: 0;
 }
+
+
 
 li.search {
   padding-left: 30px;
@@ -97,16 +121,19 @@ li.search a:before {
   width: 19px;
   height: 19px;
   float: left;
-  margin: 0 7px 0 0px;
+  margin-right: 7px;
+  margin-top: 2px;
 }
 
 li.logout a:before {
   content: "";
+  display: block;
   background: url("logout-icon.svg") no-repeat;
   width: 19px;
   height: 19px;
   float: left;
   margin: 0 7px 0 0px;
+  margin-top: 2px;
 }
 
 .actions li a {
@@ -114,16 +141,15 @@ li.logout a:before {
   text-decoration: none;
   color: #1d70b8;
   border-bottom: none;
-  padding-bottom: 2px;
   margin-right: 20px;
+
 }
 
 .actions a:hover {
   text-decoration: none;
-  padding-bottom: 2px;
   border-bottom: none;
   color: #003078;
-  text-decoration: none;
+  border-bottom: 2px solid #003078;
 }
 
 .main-nav li {
@@ -131,60 +157,43 @@ li.logout a:before {
 }
 
 .main-nav li {
-  display: inline;
+  padding: 1.5rem;
+  width: 100%;
+  border-top: 1px solid #bbb;
   position: relative;
-  padding-right: 3px;
 }
 
-.menu ul li {
-  background-color: red;
+.menu ul {
+  margin-left: 0;
 }
 
 .menu li a {
-  padding: 20px 30px;
-  border-top: solid 1px #bbb;
-  margin-left: 0px;
-  margin-bottom: -20px;
   color: #1d70b8;
-
+  text-decoration: none;
 }
 
-.menu a:hover {
+.menu li:hover {
   background-color: #efefef;
   color: #003078;
 }
 
 
-/* menu btn */
 
-.main-nav .menu-btn {
-  display: none;
-}
 
-.main-nav .menu-btn:checked~.menu {
-  max-height: 240px;
-}
 
-.main-nav .menu-btn:checked~.menu-icon .nav-icon {
-  background: transparent;
-}
 
-.main-nav .menu-btn:checked~.menu-icon .nav-icon:before {
-  transform: rotate(-45deg);
-  top: 0;
-}
 
-.main-nav .menu-btn:checked~.menu-icon .nav-icon:after {
-  transform: rotate(45deg);
-  top: 0;
-}
 
-/* DESKTOP 48em = 768px @ 16pt font */
 
-@media (min-width: 970px) {
+
+
+@media (min-width: 960px) {
   .main-nav li {
+    display: inline;
+    width: auto;
+    border-top: none;
     float: left;
-    margin: 20px;
+    padding-right: 5px;
   }
 
   .main-nav li a {
@@ -197,22 +206,40 @@ li.logout a:before {
     clear: none;
     float: left;
     max-height: none;
+    margin-left: 20px;
   }
 
   .main-nav .menu-icon {
     display: none;
   }
 
+  .main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: visible;
+  }
+
   .menu li a {
     border-top: none;
-    padding: 0;
-    border-bottom: solid 2px #1d70b8;
-    padding-bottom: 2px;
+    margin-left: 0px;
+    margin-bottom: -20px;
     text-decoration: none;
   }
 
+  .menu li:hover {
+    background-color: transparent;
+  }
+
   .menu li a:hover {
-    border-bottom: none;
+    border-bottom: solid 2px;
+    background-color: transparent;
+    color: #003078;
+
+  }
+
+  .menu li a:active {
+    border-bottom: solid 2px;
     color: #003078;
   }
 
@@ -227,7 +254,12 @@ li.logout a:before {
     margin-left: 1rem;
   }
 
-  .actions li a {
-    border-bottom: none;
+  .actions li a:hover {
+    border-bottom: solid 2px #003078;
+    margin-bottom: 0;
+  }
+
+  li.search a {
+    margin-right: 0px;
   }
 }
