@@ -176,6 +176,11 @@ li.logout a:before {
   color: #003078;
 }
 
+.menu-icon:focus {
+  outline: 5px solid #1d70b8;
+  outline-offset: -20px;
+  z-index: 999;
+}
 
 
 @media (min-width: 955px) {
