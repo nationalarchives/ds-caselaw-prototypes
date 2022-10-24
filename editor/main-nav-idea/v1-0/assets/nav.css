@@ -141,6 +141,7 @@ li.logout a:before {
   color: #1d70b8;
   border-bottom: none;
   margin-right: 20px;
+  padding-top: 0px;
 }
 
 .actions a:hover {
@@ -251,5 +252,15 @@ li.logout a:before {
 
   li.search a {
     margin-right: 0px;
+  }
+
+  li.search a:before {
+    content: "";
+    margin-top: 2px;
+  }
+  
+  li.logout a:before {
+    content: "";
+    margin-top: 2px;
   }
 }
