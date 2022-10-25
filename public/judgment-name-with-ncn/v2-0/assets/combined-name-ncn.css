@@ -25,10 +25,9 @@ span.separator {
 
 @media (max-width: 768px) {
     .judgment-details {
-      min-width: 90%;
-      text-align: center; 
-      margin: 0;
-      width: 100%;
-  
+        min-width: 90%;
+        text-align: center;
+        margin: 0;
+        width: 100%;
     }
-  }
+}
