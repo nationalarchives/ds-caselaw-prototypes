@@ -2452,7 +2452,8 @@ a:visited {
 
 @media (min-width: 576px) {
   .judgment-toolbar-download {
-    margin-top: 1rem;
+       /*  changed */
+    margin-top: 0.5rem;
   }
 }
 
@@ -2469,14 +2470,19 @@ a:visited {
 }
 
 .judgment-toolbar-download__download-options {
-  color: #555;
-  font-size: 0.75rem;
+  /* both changed  */
+  font-size: 1rem;
   margin: 1rem 0 0 0;
 }
+
+
+
+
 /* extra declaration  */
 @media (max-width: 768px) {
 .judgment-toolbar-download__download-options {
   text-align: center;
+  margin: 1.5rem 0 0 0;
 }
 }
 
