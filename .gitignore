@@ -1,0 +1,6 @@
+# macOS desktop services store.
+.DS_Store
+
+# Editor configuration files
+*.code-workspace
+.idea/
