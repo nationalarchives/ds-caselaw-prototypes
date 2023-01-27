@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Populated email journey</title>
+</head>
+<body>
+    <h1>Semi-automated conformation email</h1>
+    <p>This design for is to show the journey to show how we can create a semi-automated confirmation email </p>
+    <ul>
+        <li><a href="v1-0/index.html">Semi-automated confirmation email – version 1</li>
+    </ul>
+</body>
+</html>

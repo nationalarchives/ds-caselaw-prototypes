@@ -1,0 +1,265 @@
+.main-nav {
+  background-color: #fff;
+  border-bottom: solid 1px #808080;
+  position: relative;
+  width: 100%;
+  margin-bottom: 3rem;
+  display: block;
+  float: left;
+}
+
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.main-nav li a {
+  color: #000;
+  margin: 5px;
+}
+
+.main-nav li a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid;
+  padding-bottom: 2px;
+  color: #003078;
+}
+
+.main-nav .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+.main-nav .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 20px 40px;
+  position: relative;
+  user-select: none;
+  color: #1d70b8;
+}
+
+.main-nav .menu-icon:hover {
+  cursor: pointer;
+  float: right;
+  padding: 20px 40px;
+  position: relative;
+  user-select: none;
+  color: #003078;
+}
+
+.main-nav .menu-icon .nav-icon {
+  top: 4px;
+  margin-right: 6px;
+  background-image: url("down-chevron.svg");
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+}
+
+.main-nav .menu-icon .nav-icon:before {
+  background-image: url("up-chevron.svg");
+  display: inline-block;
+  padding: 10px;
+  position: absolute;
+}
+
+.main-nav .menu-icon .nav-icon:after {
+  top: -5px;
+}
+
+.main-nav .menu-btn {
+  display: none;
+}
+
+.main-nav .menu-btn:checked~.menu {
+  max-height: 240px;
+}
+
+.main-nav .menu-btn:checked~.menu-icon .nav-icon {
+  background-image: url("up-chevron.svg");
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+}
+
+.main-nav .menu-btn:checked~.menu-icon .nav-icon:before {
+  top: 0;
+}
+
+.main-nav .menu-btn:checked~.menu-icon .nav-icon:after {
+  top: 0;
+}
+
+.actions {
+  float: left;
+  display: inline;
+  position: absolute;
+  top: 15px;
+  margin-left: 0;
+}
+
+.actions li {
+  display: inline;
+  padding-left: 0;
+}
+
+
+
+li.search {
+  padding-left: 30px;
+  border-bottom: none;
+}
+
+li.search a:before {
+  content: "";
+  display: block;
+  background: url("search-icon.svg") no-repeat;
+  width: 19px;
+  height: 19px;
+  float: left;
+  margin-right: 7px;
+  margin-top: 2px;
+}
+
+li.logout a:before {
+  content: "";
+  display: block;
+  background: url("logout-icon.svg") no-repeat;
+  width: 19px;
+  height: 19px;
+  float: left;
+  margin: 0 7px 0 0px;
+  margin-top: 2px;
+}
+
+.actions li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #1d70b8;
+  border-bottom: none;
+  margin-right: 20px;
+
+}
+
+.actions a:hover {
+  text-decoration: none;
+  border-bottom: none;
+  color: #003078;
+  border-bottom: 2px solid #003078;
+}
+
+.main-nav li {
+  padding: 0px 0px;
+}
+
+.main-nav li {
+  padding: 1.5rem;
+  width: 100%;
+  border-top: 1px solid #bbb;
+  position: relative;
+}
+
+.menu ul {
+  margin-left: 0;
+}
+
+.menu li a {
+  color: #1d70b8;
+  text-decoration: none;
+}
+
+.menu li:hover {
+  background-color: #efefef;
+  color: #003078;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 960px) {
+  .main-nav li {
+    display: inline;
+    width: auto;
+    border-top: none;
+    float: left;
+    padding-right: 5px;
+  }
+
+  .main-nav li a {
+    padding: 0px;
+    color: #1d70b8;
+    display: block;
+  }
+
+  .main-nav .menu {
+    clear: none;
+    float: left;
+    max-height: none;
+    margin-left: 20px;
+  }
+
+  .main-nav .menu-icon {
+    display: none;
+  }
+
+  .main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: visible;
+  }
+
+  .menu li a {
+    border-top: none;
+    margin-left: 0px;
+    margin-bottom: -20px;
+    text-decoration: none;
+  }
+
+  .menu li:hover {
+    background-color: transparent;
+  }
+
+  .menu li a:hover {
+    border-bottom: solid 2px;
+    background-color: transparent;
+    color: #003078;
+
+  }
+
+  .menu li a:active {
+    border-bottom: solid 2px;
+    color: #003078;
+  }
+
+  .menu a:hover {
+    background-color: #ffffff;
+  }
+
+  .actions {
+    float: right;
+    position: relative;
+    top: 0px;
+    margin-left: 1rem;
+  }
+
+  .actions li a:hover {
+    border-bottom: solid 2px #003078;
+    margin-bottom: 0;
+  }
+
+  li.search a {
+    margin-right: 0px;
+  }
+}
