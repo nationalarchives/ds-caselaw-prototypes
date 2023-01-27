@@ -6,10 +6,11 @@
     font-size: 1.8rem;
 }
 
-p.judgment-name {
+h1.judgment-name {
+    font-size: 1.6rem;
     margin-top: 7px;
     margin: 5px 3px;
-}
+  }
 
 span.separator {
     font-weight: bold;
@@ -25,10 +26,10 @@ span.separator {
 
 @media (max-width: 768px) {
     .judgment-details {
-      min-width: 90%;
-      text-align: center; 
-      margin: 0;
-      width: 100%;
-  
+        min-width: 90%;
+        text-align: center;
+        margin: 0;
+        width: 100%;
     }
-  }
+}
+

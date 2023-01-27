@@ -2416,7 +2416,8 @@ a:visited {
 
 @media (min-width: 576px) {
   .judgment-toolbar a {
-    padding: 0.5rem 1.5rem;
+     /* change   */
+    padding: 0.5rem 1rem;
   }
 }
 
@@ -2452,14 +2453,15 @@ a:visited {
 
 @media (min-width: 576px) {
   .judgment-toolbar-download {
-       /*  changed */
+    /* change   */
     margin-top: 0.5rem;
   }
 }
 
 @media (max-width: 768px) {
   .judgment-toolbar-download {
-    margin: 0 auto;
+    /* change   */
+    margin: 1rem auto 0;
 }
 }
 
@@ -2470,19 +2472,14 @@ a:visited {
 }
 
 .judgment-toolbar-download__download-options {
-  /* both changed  */
+  color: #555;
   font-size: 1rem;
-  margin: 1rem 0 0 0;
+  margin: 1.5rem 0 0 0;
 }
-
-
-
-
 /* extra declaration  */
 @media (max-width: 768px) {
 .judgment-toolbar-download__download-options {
   text-align: center;
-  margin: 1.5rem 0 0 0;
 }
 }
 

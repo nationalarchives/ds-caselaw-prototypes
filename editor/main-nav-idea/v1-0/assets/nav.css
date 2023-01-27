@@ -13,11 +13,12 @@
   padding: 0;
   list-style: none;
   overflow: hidden;
+  float: left;
 }
 
 .main-nav li a {
   color: #000;
-  margin: 5px;
+  margin: 7px;
 }
 
 .main-nav li a:hover {
@@ -35,8 +36,8 @@
 
 .main-nav .menu-icon {
   cursor: pointer;
-  float: right;
-  padding: 20px 40px;
+  float: left;
+  padding: 20px 32px;
   position: relative;
   user-select: none;
   color: #1d70b8;
@@ -44,8 +45,7 @@
 
 .main-nav .menu-icon:hover {
   cursor: pointer;
-  float: right;
-  padding: 20px 40px;
+  float: left;
   position: relative;
   user-select: none;
   color: #003078;
@@ -76,7 +76,8 @@
 }
 
 .main-nav .menu-btn:checked~.menu {
-  max-height: 240px;
+  max-height: 230px;
+  width: 100%;
 }
 
 .main-nav .menu-btn:checked~.menu-icon .nav-icon {
@@ -106,8 +107,6 @@
   display: inline;
   padding-left: 0;
 }
-
-
 
 li.search {
   padding-left: 30px;
@@ -142,7 +141,7 @@ li.logout a:before {
   color: #1d70b8;
   border-bottom: none;
   margin-right: 20px;
-
+  padding-top: 0px;
 }
 
 .actions a:hover {
@@ -157,7 +156,7 @@ li.logout a:before {
 }
 
 .main-nav li {
-  padding: 1.5rem;
+  padding: 1.2rem 1.5rem;
   width: 100%;
   border-top: 1px solid #bbb;
   position: relative;
@@ -177,21 +176,19 @@ li.logout a:before {
   color: #003078;
 }
 
+.menu-icon:focus {
+  outline: 5px solid #1d70b8;
+  outline-offset: -20px;
+  z-index: 999;
+}
 
 
-
-
-
-
-
-
-
-
-@media (min-width: 960px) {
+@media (min-width: 955px) {
   .main-nav li {
     display: inline;
     width: auto;
     border-top: none;
+
     float: left;
     padding-right: 5px;
   }
@@ -235,7 +232,6 @@ li.logout a:before {
     border-bottom: solid 2px;
     background-color: transparent;
     color: #003078;
-
   }
 
   .menu li a:active {
@@ -248,7 +244,7 @@ li.logout a:before {
   }
 
   .actions {
-    float: right;
+    float: left;
     position: relative;
     top: 0px;
     margin-left: 1rem;
@@ -261,5 +257,15 @@ li.logout a:before {
 
   li.search a {
     margin-right: 0px;
+  }
+
+  li.search a:before {
+    content: "";
+    margin-top: 2px;
+  }
+  
+  li.logout a:before {
+    content: "";
+    margin-top: 2px;
   }
 }
