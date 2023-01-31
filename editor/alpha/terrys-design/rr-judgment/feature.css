@@ -1,0 +1,19 @@
+.notice {
+  height: 0;
+  width: 300px;
+  border-top: 20px solid #FFB952;
+  border-bottom: 20px solid #FFB952;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-family: Open-Sans, sans-serif;
+}
+
+.message {
+  margin: auto;
+  padding: 0px;
+  text-align: center;
+  margin-top: -10px;
+}
