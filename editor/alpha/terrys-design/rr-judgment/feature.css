@@ -1,6 +1,6 @@
 .notice {
   height: 0;
-  width: 300px;
+  width: 350px;
   border-top: 20px solid #FFB952;
   border-bottom: 20px solid #FFB952;
   border-left: 10px solid transparent;
@@ -16,4 +16,32 @@
   padding: 0px;
   text-align: center;
   margin-top: -10px;
+}
+
+@media (max-width: 768px) {
+  .notice {
+    width: 90%;
+  }
+
+  .message {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 367px) {
+  .notice {
+    height: 0;
+    width: 95%;
+    padding: 0;
+    border-top: 30px solid #FFB952;
+    border-bottom: 30px solid #FFB952;
+  }
+
+  .message {
+    font-size: 16px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    margin-top: -30px;
+  }
 }
