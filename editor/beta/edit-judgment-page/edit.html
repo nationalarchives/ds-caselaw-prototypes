@@ -170,6 +170,7 @@
         <form aria-label="Edit judgment" method="post">
           <input type="hidden" name="csrfmiddlewaretoken"
             value="G9xRLrp34aKqiud1kx2URFuySkK7cfNJO9bcPu6bbjDwMzwcWsHIk858ajCMHUYF">
+    
           <div class="edit-component__panel">
             <label for="metadata_name">Judgment name</label>
             <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="2"
@@ -182,7 +183,7 @@
               name="neutral_citation" id="neutral_citation">
           </div>
           <div class="edit-component__panel">
-            <label for="court">Court</label>
+            <label for="court">Court name</label>
             <input type="text" class="edit-component__court-input" value="EWHC-Chancery-Patents" name="court"
               id="court">
           </div>
@@ -232,7 +233,7 @@
 
               <option value="zoe">Zoe Campbell</option>
 
-              <option value="terry" selected="">Terry Price</option>
+              <option value="terry">Terry Price</option>
 
               <option value="nick">Nick Jackson</option>
 
@@ -246,14 +247,14 @@
 
               <option value="janine">Janine Warren</option>
 
-              <option value="rooha">Rooha Sulehri</option>
+              <option value="rooha" selected="">Rooha Sulehri</option>
 
               <option value="george">George Doji</option>
 
             </select>
           </div>
           <div class="edit-component__panel">
-            <label for="published">Published this judgment</label>
+            <label for="published">Publish this judgment</label>
             <input type="checkbox" class="edit-component__published-input" name="published" id="published">
           </div>
           <div class="edit-component__panel">
@@ -261,6 +262,20 @@
             <input type="submit" value="Save">
           </div>
         </form>
+      </div>
+    </div>
+
+    <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+      <div class="govuk-notification-banner__header">
+        <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+          Success
+        </h2>
+      </div>
+      <div class="govuk-notification-banner__content">
+        <h3 class="govuk-notification-banner__heading">
+          Training outcome recorded and trainee withdrawn
+        </h3>
+        <p class="govuk-body">Contact <a class="govuk-notification-banner__link" href="#">example@department.gov.uk</a> if you think there’s a problem.</p>
       </div>
     </div>
 

@@ -191,6 +191,7 @@ body {
   padding: calc(1rem / 2) 0;
 }
 
+
 .edit-component input[type=submit], .list-versions-component input[type=submit], .judgment-info-component input[type=submit] {
   background-color: #037091;
   font-weight: 700;
@@ -244,7 +245,7 @@ body {
   }
 }
 .edit-component input[type=checkbox]:focus, .list-versions-component input[type=checkbox]:focus, .judgment-info-component input[type=checkbox]:focus {
-  outline: 5px solid #1d70b8;
+  outline: 2px solid #1d70b8;
   outline-offset: 0;
   z-index: 999;
 }
@@ -2451,7 +2452,6 @@ a:focus {
 }
 
 .edit-component__neutral_citation-input {
-  display: inline-block;
   width: 50%;
   padding: 12px 20px;
   margin: auto;
@@ -2460,7 +2460,6 @@ a:focus {
 }
 
 .edit-component__court-input {
-  display:inline-block; 
   width: 50%;
   padding: 12px 20px;
   margin: auto;
@@ -2469,7 +2468,6 @@ a:focus {
 }
 
 .edit-component__judgment_date-input {
-  display:inline-block;
   width: 50%;
   padding: 12px 20px;
   margin: auto;
